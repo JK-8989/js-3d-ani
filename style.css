@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 900px;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+.card {
+  min-height: 80vh;
+  width: 28em;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3 );
+  padding: 0 3rem;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.nft-image {
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nft-image img {
+  width: 10rem;
+  z-index: 2;
+}
+.circle {
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient( to right, rgba(112, 227, 214, 0.7), rgba(176, 201, 37, 0.7));
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.info h1 {
+  font-size: 1.7rem;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: grey;
+  font-weight: lighter;
+}
+.size {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+}
+.size button {
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+button.active {
+  background-color: grey;
+  color: white;
+}
+.purchase {
+  margin: 2rem 0rem 1.5rem 0rem;
+}
+.purchase button {
+  width: 100%;
+  padding: 0.8rem 0rem;
+  border-radius: 10px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
